@@ -1,7 +1,7 @@
 # ResBook: An Express Node.js App Deployment Guide on Azure with MSSQL
 ## Introduction : 
 ResBook is a comprehensive application for managing restaurant tables and cuisine orders, which is now moving from an in-house infrastructure to the cloud premises in Azure.
-
+Deployment Url : https://resbook1.azurewebsites.net/
 ## Pre-requisites
 
 - Docker installation on your local machine
@@ -271,4 +271,4 @@ VALUES (1, 1, GETDATE()),
 
 ## Step 15: Finalizing the Deployment
 
-Finally, open the Azure portal and locate the web application at https://resbook.azurewebsites.net/
+Finally, open the Azure portal and locate the web application at (https://resbook1.azurewebsites.net/)
