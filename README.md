@@ -251,30 +251,15 @@ VALUES (1, 1),
        (7, 7);
 
 -- Table: Customer
-CREATE TABLE Customer
-(
-    CustomerID INT PRIMARY KEY IDENTITY(1,1),
-    Name NVARCHAR(50),
-    Email NVARCHAR(255)
-);
 
 -- Inserting Data into Customer table
 INSERT INTO Customer (Name, Email)
-VALUES ('Customer A', 'customerA@mail.com'),
-       ('Customer B', 'customerB@mail.com'),
-       ('Customer C', 'customerC@mail.com'),
-       ('Customer D', 'customerD@mail.com');
+VALUES ('Customer A', 'abc@mail.com'),
+       ('Customer B', 'test@mail.com'),
+       ('Customer C', 'res@mail.com'),
+       ('Customer D', 'tin@mail.com');
 
 -- Table: Booking
-CREATE TABLE Booking
-(
-    BookingID INT PRIMARY KEY IDENTITY(1,1),
-    RestaurantID INT,
-    CustomerID INT,
-    BookingTime DATETIME,
-    FOREIGN KEY (RestaurantID) REFERENCES Restaurant(RestaurantID),
-    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
-);
 
 -- Inserting Data into Booking table
 INSERT INTO Booking (RestaurantID, CustomerID, BookingTime)
